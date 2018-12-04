@@ -1,14 +1,7 @@
 ﻿@{
     Layout = null;
 
-    var setTitle = "Mr. Mercedes";
-    var releaseYear = "2015";
-    var description = "Another thriller from Stephen King";
-    var authors = new string[]
-    {
-        "Stephen King"
-    };
-}
+    }
 
 <!DOCTYPE html>
 
@@ -19,17 +12,17 @@
 </head>
 <body>
     <div>
-        <h1>@setTitle</h1>
-        <h2>Released: @releaseYear</h2>
+        <h1>@ViewBag.SetTitle</h1>
+        <h2>Released: @ViewBag.ReleaseYear</h2>
         <h5>Description: </h5>
-        <div>@Html.Raw(description)</div>
+        <div>@Html.Raw(ViewBag.Description)</div>
         
-        @if (authors.Length > 0)
+        @if (ViewBag.Authors.Length > 0)
         {
         <h5>Authors:</h5> 
             <div>
                 <ul>
-                    @foreach (var author in authors)
+                    @foreach (var author in ViewBag.Authors)
                     {
                         <li>@author</li>
                     }

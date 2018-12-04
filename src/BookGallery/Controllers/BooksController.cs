@@ -17,6 +17,16 @@ namespace BookGallery.Controllers
 
             return Content("Hello from Detail");*/
 
+
+            ViewBag.SetTitle = "Mr. Mercedes";
+            ViewBag.ReleaseYear = "2015";
+            ViewBag.Description = "Another thriller from Stephen King";
+            ViewBag.Authors = new string[]
+            {
+                "Stephen King"
+            };
+
+
             return View();
 
         }
