@@ -1,5 +1,13 @@
 ﻿@{
     Layout = null;
+
+    var setTitle = "Mr. Mercedes";
+    var releaseYear = "2015";
+    var description = "Another thriller from Stephen King";
+    var authors = new string[]
+    {
+        "Stephen King"
+    };
 }
 
 <!DOCTYPE html>
@@ -11,7 +19,12 @@
 </head>
 <body>
     <div>
-        <h1>Hello From our view</h1>
+        <h1>@setTitle</h1>
+        <h2>Released: @releaseYear</h2>
+        <h5>Description: </h5>
+        <div>@Html.Raw(description)</div>
+        <h5>Authors:</h5> 
+        <div>@authors</div>
     </div>
 </body>
 </html>
