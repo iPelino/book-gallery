@@ -10,13 +10,15 @@ namespace BookGallery.Controllers
     {
         public ActionResult Detail()
         {
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
+            /*if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
             {
                 return Redirect("/");
             }
 
-            return Content("Hello from Detail");
-            
+            return Content("Hello from Detail");*/
+
+            return View();
+
         }
     }
 }
